@@ -14,6 +14,7 @@
 		36C1797A1C8F799C002D9347 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C179781C8F799C002D9347 /* LaunchScreen.storyboard */; };
 		36C179851C8F799C002D9347 /* DesignShowcaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C179841C8F799C002D9347 /* DesignShowcaseTests.swift */; };
 		36C179901C8F799C002D9347 /* DesignShowcaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C1798F1C8F799C002D9347 /* DesignShowcaseUITests.swift */; };
+		36C179A01C8F8E9E002D9347 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C1799F1C8F8E9E002D9347 /* roundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		36C1798B1C8F799C002D9347 /* DesignShowcaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignShowcaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C1798F1C8F799C002D9347 /* DesignShowcaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignShowcaseUITests.swift; sourceTree = "<group>"; };
 		36C179911C8F799C002D9347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36C1799F1C8F8E9E002D9347 /* roundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = roundedButton.swift; path = ../roundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		36C1796E1C8F799C002D9347 /* DesignShowcase */ = {
 			isa = PBXGroup;
 			children = (
+				36C1799F1C8F8E9E002D9347 /* roundedButton.swift */,
 				36C1796F1C8F799C002D9347 /* AppDelegate.swift */,
 				36C179711C8F799C002D9347 /* ViewController.swift */,
 				36C179731C8F799C002D9347 /* Main.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				36C179721C8F799C002D9347 /* ViewController.swift in Sources */,
 				36C179701C8F799C002D9347 /* AppDelegate.swift in Sources */,
+				36C179A01C8F8E9E002D9347 /* roundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

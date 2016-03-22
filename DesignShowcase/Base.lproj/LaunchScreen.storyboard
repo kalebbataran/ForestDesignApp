@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingBG" translatesAutoresizingMaskIntoConstraints="NO" id="dUI-GP-lO7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaydot" translatesAutoresizingMaskIntoConstraints="NO" id="HYA-Pu-LjE">
+                                <rect key="frame" x="143" y="221" width="314" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="KK4-ZB-unG"/>
+                                    <constraint firstAttribute="width" constant="314" id="wLJ-oc-4fZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dUI-GP-lO7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3DN-0F-Tfh"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="dUI-GP-lO7" secondAttribute="bottom" id="8C5-JV-LYD"/>
+                            <constraint firstItem="dUI-GP-lO7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9tl-Pm-xfZ"/>
+                            <constraint firstItem="HYA-Pu-LjE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AnH-Hv-mwO"/>
+                            <constraint firstItem="HYA-Pu-LjE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PrI-hZ-cax"/>
+                            <constraint firstAttribute="trailing" secondItem="dUI-GP-lO7" secondAttribute="trailing" id="dJr-On-fLH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +44,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kaydot" width="341" height="159"/>
+        <image name="loadingBG" width="640" height="960"/>
+    </resources>
 </document>
